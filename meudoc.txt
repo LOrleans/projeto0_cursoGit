@@ -1,1 +1,4 @@
 Olá meu nome é Lucas
+
+git add .
+// Adiciona todos os arquivos no caminho para ser versionado no github
