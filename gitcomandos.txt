@@ -1,14 +1,30 @@
+Códigos Git
+
 git --help
-
-git status 
-
-git add .
-
-git commit -m "mensagem"
-
+git status ( mostra estado atual do repositório git )
+git add . ( adiciona mudanças do diretório atual à staging area do Git )
+git commit -m "mensagem" ( registra uma mudança de um arquivo no historico do repositório )
+git push ( envia arquivos para o github )
 git reflog ( mostra todas as versões do código )
-
 git reset --hard *id* ( retorna o código pra uma versão anterior especificada pelo ID )
+git branch ( verifica quantas branchs tem disponível )
+git branch +nome ( registra uma nova branch )
+git checkout staging ( muda a branch para staging )
+git pull
+git merge staging ( estando na branch master, puxa do staging --> master ) *FAZER GIT PULL ANTES*
+git checkout -b *branchNova* *branchModelo* ( cria uma nova branch e faz a troca, utilizando uma branch modelo )
+
+
+Ordem aconselhada quando trabalhar em equipe:
+1- Git pull da branch principal
+2- Gerar nova branch
+3- Trabalhar na branch secundária criada
+4- Finalizar o trabalho na branch secundária/temporária
+5- Git checkout na branch principal 
+6- Git pull 
+7- Mergiar(unir) código da branch temporária à branch principal ( após testar )
+8- Git push da branch principal 
+
 
 Códigos Linux:
 
